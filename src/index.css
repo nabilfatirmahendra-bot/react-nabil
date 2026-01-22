@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base{
+    html, body {
+        height: 100%;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body{
+        font-family: "Poppins", sans-serif;
+        padding-top: env(safe-area-inset-top);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+        padding-bottom: env(safe-area-inset-bottom);
+        -webkit-tap-highlight-color: transparent;
+        background-color: #831843;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    input, button, textarea, a {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
+
+    :focus {
+        outline: 2px solid rgba(255,255,255,0.12);
+        outline-offset: 2px;
+    }
+}
